@@ -1,0 +1,78 @@
+Templates for biota.
+
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "defiled_desert"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,//下陷
+        "snow_accumulation": [ 0.0, 0.125 ],//下雪几率
+        "temperature": 2.0//温度
+      },
+      "minecraft:overworld_height": {//高度
+        "noise_type": "lowlands"
+      },
+      "minecraft:surface_parameters": {
+        "top_material": "yinqi:sand_defiled",//顶部方块
+        "mid_material": "yinqi:sandstone_defiled",//中层方块
+        "foundation_material": "yinqi:stone_defiled",//底部方块
+        "sea_floor_material": "yinqi:sand_defiled",//水底方块
+        "sea_material": "minecraft:water",//构成水的方块
+        "sea_floor_depth": 7//水的深度
+      },
+      "minecraft:overworld_generation_rules": {//概率
+        "generate_for_climates": [
+          [ "medium", 3 ]
+        ]
+      },
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "defiled": {},
+      "defiled_desert": {}
+    }
+  }
+}
+
+So, my sapphire biota, greey.
+
+
+{
+  "format_version": "1.16.100",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "greedy"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 1.0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "lowlands"
+      },
+      "minecraft:surface_parameters": {
+        "top_material": "minecraft:diamond_block">,
+        "mid_material": "minecraft:gold_block",
+        "foundation_material": "minecraft:bedrock",
+        "sea_floor_material": "minecraft:bedrock",
+        "sea_material": "minecraft:water",
+        "sea_floor_depth": 10
+      },
+      "minecraft:overworld_generation_rules": {
+        "generate_for_climates": [
+          [ "medium", 10 ]
+        ]
+      },
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "defiled": {},
+      "defiled_desert": {}
+    }
+  }
+}
